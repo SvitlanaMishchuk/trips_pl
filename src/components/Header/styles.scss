@@ -1,0 +1,11 @@
+@import './../../theme/palette.scss';
+
+.header {
+  height: 64px;
+  width: 100vw;
+  background-color: $secondary;
+}
+
+.navigation_link {
+  padding: 0 1rem;
+}

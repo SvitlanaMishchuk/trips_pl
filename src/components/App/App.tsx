@@ -1,6 +1,10 @@
-import React from 'react';
+import { Header } from '../Header';
 import './index.scss';
 
 export const App = () => {
-  return <div className="app__container">Start!</div>;
+  return (
+    <div className='app__container'>
+      <Header />
+    </div>
+  );
 };
