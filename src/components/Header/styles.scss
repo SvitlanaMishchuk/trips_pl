@@ -1,4 +1,6 @@
 @import './../../theme/palette.scss';
+@import './../../theme/breakpoints.scss';
+@import './../../theme/helpers.scss';
 
 .header {
   height: 64px;
@@ -6,6 +8,19 @@
   background-color: $secondary;
 }
 
-.navigation_link {
-  padding: 0 1rem;
+.navigation {
+  &_container {
+    @include lg-down {
+      display: none;
+    }
+  }
+  &_btn {
+    padding: rem-calc(19) rem-calc(16) rem-calc(16) rem-calc(32);
+    @include lg-up {
+      display: none;
+    }
+  }
+  &_link {
+    padding: 0 2rem;
+  }
 }

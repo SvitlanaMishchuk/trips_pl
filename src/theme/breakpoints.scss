@@ -1,0 +1,15 @@
+$sm-width: 480px;
+$md-width: 768px;
+$lg-width: 1024px;
+
+@mixin lg-down {
+  @media (max-width: $lg-width) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @media (min-width: #{$lg-width + 1px}) {
+    @content;
+  }
+}

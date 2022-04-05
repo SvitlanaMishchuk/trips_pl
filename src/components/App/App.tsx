@@ -3,7 +3,7 @@ import './index.scss';
 
 export const App = () => {
   return (
-    <div className='app__container'>
+    <div className='app_container'>
       <Header />
     </div>
   );
