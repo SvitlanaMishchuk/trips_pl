@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "label": "Flights"
+  },
+  {
+    "id": 2,
+    "label": "Countries"
+  },
+  {
+    "id": 3,
+    "label": "Contacts"
+  }
+]
