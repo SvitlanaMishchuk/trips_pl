@@ -1,3 +1,5 @@
 export const Logo = () => {
-  return <img src='./../../../assets/logo.png' alt='Trips Plan' />;
+  return (
+    <img src='./../../../assets/logo.png' className='logo' alt='Trips Plan' />
+  );
 };

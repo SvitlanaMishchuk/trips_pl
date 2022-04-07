@@ -1,3 +1,4 @@
+import { HamburgerMenu } from './components/HamburgerMenu';
 import { LoginButton } from './components/LoginButton';
 import { Logo } from './components/Logo';
 import { Navigation } from './components/Navigation';
@@ -7,9 +8,7 @@ export const Header = () => {
   return (
     <div className='flex justify-space-between header'>
       <div className='flex justify-start'>
-        <button className='btn navigation_btn'>
-          <img src='./../../assets/hamburger-icon.png' alt='Open menu' />
-        </button>
+        <HamburgerMenu />
         <Logo />
       </div>
       <div className='flex justify-start'>

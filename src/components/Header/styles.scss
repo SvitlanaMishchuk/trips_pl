@@ -8,6 +8,12 @@
   background-color: $secondary;
 }
 
+.logo {
+  @include lg-up {
+    margin-left: rem-calc(30);
+  }
+}
+
 .navigation {
   &_container {
     @include lg-down {
@@ -22,5 +28,25 @@
   }
   &_link {
     padding: 0 2rem;
+  }
+}
+
+.hamburger-menu {
+  &_container {
+    width: 40%;
+    min-width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: $secondary;
+    @include lg-up {
+      display: none;
+    }
+  }
+  &_icon {
+    width: 2rem;
+    height: 2re;
+  }
+  &_close {
+    padding: rem-calc(24) rem-calc(32);
   }
 }
