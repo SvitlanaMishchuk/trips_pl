@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 import { IconButton } from '../../../shared/components/IconButton';
 
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 export const HamburgerMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,19 +14,12 @@ export const HamburgerMenu = () => {
 
   return (
     <>
-      <IconButton
-        className='navigation_btn'
-        iconSrc='./../../assets/hamburger-icon.png'
-        iconAlt='Open menu'
-        onClick={handleHamburgerMenuClick}
-      />
+      <IconButton icon={faBars} onClick={handleHamburgerMenuClick} />
       {isMenuOpen && (
         <div className='hamburger-menu_container'>
           <IconButton
             className='hamburger-menu_close'
-            iconSrc='./../../assets/close-icon.svg'
-            iconAlt='Close menu'
-            iconClassName='hamburger-menu_icon'
+            icon={faXmark}
             onClick={handleHamburgerMenuClick}
           />
         </div>

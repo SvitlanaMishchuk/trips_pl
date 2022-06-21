@@ -7,7 +7,7 @@ import './styles.scss';
 export const Header = () => {
   return (
     <div className='flex justify-space-between header'>
-      <div className='flex justify-start'>
+      <div className='flex justify-start align-center logo_container'>
         <HamburgerMenu />
         <Logo />
       </div>

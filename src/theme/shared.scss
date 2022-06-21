@@ -18,7 +18,7 @@
 }
 
 // Button classes
-.btn {
+.button {
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -34,7 +34,12 @@
   }
 }
 
-.btn-primary {
+.icon-button {
+  font-size: 1.5rem;
+  color: $primary;
+}
+
+.button-primary {
   background-color: $primary;
   color: $secondary;
   letter-spacing: 0.3px;

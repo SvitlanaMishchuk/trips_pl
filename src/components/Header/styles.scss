@@ -9,20 +9,14 @@
 }
 
 .logo {
-  @include lg-up {
-    margin-left: rem-calc(30);
+  &_container {
+    margin-left: 2rem;
   }
 }
 
 .navigation {
   &_container {
     @include lg-down {
-      display: none;
-    }
-  }
-  &_btn {
-    padding: rem-calc(19) rem-calc(16) rem-calc(16) rem-calc(32);
-    @include lg-up {
       display: none;
     }
   }
@@ -37,6 +31,8 @@
     min-width: 250px;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: $secondary;
     @include lg-up {
       display: none;
@@ -47,6 +43,6 @@
     height: 2re;
   }
   &_close {
-    padding: rem-calc(24) rem-calc(32);
+    padding: rem-calc(19) rem-calc(42);
   }
 }

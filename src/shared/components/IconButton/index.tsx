@@ -1,22 +1,26 @@
 import { ComponentProps } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 interface IconButtonProps extends ComponentProps<'button'> {
-  iconSrc: string;
-  iconAlt: string;
+  icon: IconDefinition;
   iconClassName?: string;
   className?: string;
 }
 
 export const IconButton = ({
-  iconSrc,
-  iconAlt,
+  icon,
   iconClassName,
   className,
   ...rest
 }: IconButtonProps) => {
   return (
-    <button className={`btn ${className}`} {...rest}>
-      <img src={iconSrc} alt={iconAlt} className={iconClassName} />
-    </button>
+    <>
+      <button className={`button icon-button ${className}`} {...rest}>
+        <FontAwesomeIcon icon={icon} />
+        <i className='fas fa-bars'></i>
+      </button>
+    </>
   );
 };
