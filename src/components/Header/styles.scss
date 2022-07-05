@@ -10,7 +10,7 @@
 
 .logo {
   &_container {
-    margin-left: 2rem;
+    margin-left: rem-calc(32);
   }
 }
 
@@ -21,14 +21,14 @@
     }
   }
   &_link {
-    padding: 0 2rem;
+    padding: 0 rem-calc(32);
   }
 }
 
 .hamburger-menu {
   &_container {
     width: 40%;
-    min-width: 250px;
+    min-width: rem-calc(250);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -42,8 +42,8 @@
     margin-top: rem-calc(-3);
   }
   &_icon {
-    width: 2rem;
-    height: 2re;
+    width: rem-calc(32);
+    height: rem-calc(32);
   }
   &_close {
     padding: 0 rem-calc(8) 0 rem-calc(42);

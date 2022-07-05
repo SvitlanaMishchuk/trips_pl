@@ -3,45 +3,45 @@
 
 .foreword {
   &_container {
-    padding: 5rem 2rem;
+    padding: rem-calc(80) rem-calc(32);
     background: $dark-secondary;
     @include lg-down {
-      padding: 4rem 1rem;
+      padding: rem-calc(64) rem-calc(16);
     }
   }
   &_image {
-    max-height: 12rem;
+    max-height: rem-calc(192);
     @include lg-down {
       display: none;
     }
   }
   &_image_cabin {
-    margin: 1.625rem 0;
+    margin: rem-calc(26) 0;
     transform: scale(-1, 1);
   }
   &_image_trees {
     transform: scale(2);
   }
   &_text_container {
-    margin: 0 3rem;
+    margin: 0 rem-calc(48);
   }
   &_text {
     font-family: Souvenir, sans-serif;
     color: $text;
   }
   &_title {
-    font-size: 3.125rem;
-    margin-bottom: 1rem;
+    font-size: rem-calc(50);
+    margin-bottom: rem-calc(16);
     @include lg-down {
-      font-size: 2rem;
+      font-size: rem-calc(32);
     }
   }
   &_caption {
-    font-size: 1.625rem;
-    line-height: 2.625rem;
+    font-size: rem-calc(26);
+    line-height: rem-calc(42);
     @include lg-down {
-      font-size: 1.125rem;
-      line-height: 2rem;
+      font-size: rem-calc(18);
+      line-height: rem-calc(32);
     }
   }
 }
