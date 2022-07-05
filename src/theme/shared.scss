@@ -21,10 +21,9 @@
 
 .align-center {
   align-items: center;
-}
-
-.vertical-align-center {
-  vertical-align: baseline;
+  &-baseline {
+    vertical-align: baseline;
+  }
 }
 
 .direction-column {
