@@ -13,7 +13,9 @@ export const Header = () => {
       </div>
       <div className='flex justify-start'>
         <div className='navigation_container'>
-          <Navigation />
+          <Navigation
+            containerClassName={'align-center-baseline full-height'}
+          />
         </div>
         <LoginButton />
       </div>

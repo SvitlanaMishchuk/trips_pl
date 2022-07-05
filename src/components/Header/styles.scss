@@ -38,11 +38,21 @@
       display: none;
     }
   }
+  &_logo {
+    margin-top: rem-calc(-3);
+  }
   &_icon {
     width: 2rem;
     height: 2re;
   }
   &_close {
-    padding: rem-calc(19) rem-calc(42);
+    padding: 0 rem-calc(8) 0 rem-calc(42);
+  }
+  &_item {
+    margin: rem-calc(10) rem-calc(20);
+    padding: rem-calc(15) rem-calc(5);
+    color: $text-secondary;
+    line-height: rem-calc(18);
+    border-bottom: rem-calc(1) solid $dark-secondary;
   }
 }
