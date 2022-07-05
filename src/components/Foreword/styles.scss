@@ -1,0 +1,47 @@
+@import './../../theme/palette.scss';
+@import './../../theme/breakpoints.scss';
+
+.foreword {
+  &_container {
+    padding: 5rem 2rem;
+    background: $dark-secondary;
+    @include lg-down {
+      padding: 4rem 1rem;
+    }
+  }
+  &_image {
+    max-height: 12rem;
+    @include lg-down {
+      display: none;
+    }
+  }
+  &_image_cabin {
+    margin: 1.625rem 0;
+    transform: scale(-1, 1);
+  }
+  &_image_trees {
+    transform: scale(2);
+  }
+  &_text_container {
+    margin: 0 3rem;
+  }
+  &_text {
+    font-family: Souvenir, sans-serif;
+    color: $text;
+  }
+  &_title {
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+    @include lg-down {
+      font-size: 2rem;
+    }
+  }
+  &_caption {
+    font-size: 1.625rem;
+    line-height: 2.625rem;
+    @include lg-down {
+      font-size: 1.125rem;
+      line-height: 2rem;
+    }
+  }
+}
