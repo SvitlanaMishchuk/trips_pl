@@ -1,5 +1,11 @@
 @import './palette.scss';
 
+//Height
+
+.full-height {
+  height: 100%;
+}
+
 // Flexbox shared
 .flex {
   display: flex;
@@ -15,6 +21,14 @@
 
 .align-center {
   align-items: center;
+}
+
+.vertical-align-center {
+  vertical-align: baseline;
+}
+
+.direction-column {
+  flex-direction: column;
 }
 
 // Button classes
