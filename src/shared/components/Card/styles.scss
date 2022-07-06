@@ -1,0 +1,9 @@
+.card {
+  &_container {
+    width: 100%;
+    margin: rem-calc(20);
+  }
+  &_content {
+    margin: rem-calc(32) rem-calc(48);
+  }
+}
