@@ -1,5 +1,7 @@
 import { Header } from '../Header';
 import { Foreword } from '../Foreword';
+import { HowItWorks } from '../HowItWorks';
+
 import './index.scss';
 
 export const App = () => {
@@ -7,6 +9,7 @@ export const App = () => {
     <div className='app_container'>
       <Header />
       <Foreword />
+      <HowItWorks />
     </div>
   );
 };
