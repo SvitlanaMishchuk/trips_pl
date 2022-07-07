@@ -9,8 +9,14 @@
   &_image {
     max-width: rem-calc(300);
     height: rem-calc(215);
+    @include lg-down {
+      max-width: 100%;
+    }
+  }
+  &_title {
+    margin: rem-calc(16);
   }
   &_content {
-    margin: rem-calc(32) rem-calc(48);
+    margin: rem-calc(16) rem-calc(48);
   }
 }
