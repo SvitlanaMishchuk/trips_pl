@@ -1,7 +1,10 @@
 .how-it-works {
   &_container {
-    padding: rem-calc(32) rem-calc(32) 0;
+    padding: rem-calc(32) rem-calc(32) rem-calc(16);
     font-family: 'Souvenir', sans-serif;
+    @include lg-down {
+      padding-bottom: 0;
+    }
   }
   &_content {
     padding: rem-calc(32);
@@ -17,6 +20,9 @@
     }
     &:last-child {
       border-right: 0;
+      @include lg-down {
+        border-bottom: 0;
+      }
     }
   }
 }
