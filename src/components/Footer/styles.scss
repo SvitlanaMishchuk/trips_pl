@@ -1,0 +1,11 @@
+.footer {
+  &_container {
+    padding: rem-calc(20) rem-calc(60);
+    background: $charcoal;
+    color: $white;
+    font-weight: 500;
+  }
+  &_tab {
+    margin: 0 rem-calc(20);
+  }
+}
