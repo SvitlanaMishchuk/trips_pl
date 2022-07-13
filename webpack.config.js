@@ -24,17 +24,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-          {
-            loader: 'sass-resources-loader',
-            options: {
-              resources: [`src/theme/index.scss`],
-            },
-          },
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
       },
       {
         test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
