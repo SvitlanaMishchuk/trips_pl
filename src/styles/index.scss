@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './font-family.scss';
+
+@layer utilities {
+  .h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .button {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+
+    &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      border: none;
+      outline: none;
+      background: none;
+      color: #ce4532;
+      border: 1px solid #ce4532;
+    }
+    &-primary {
+      background-color: #ce4532;
+      color: #f6f4f2;
+      letter-spacing: 0.3px;
+      padding: 0 4rem;
+    }
+  }
+
+  .icon-button {
+    font-size: 1.5rem;
+    color: #ce4532;
+  }
+}

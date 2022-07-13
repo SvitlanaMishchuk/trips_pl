@@ -4,11 +4,11 @@ import { HowItWorks } from '../HowItWorks';
 import { Geography } from '../Geography';
 import { Footer } from '../Footer';
 
-import './index.scss';
+import './../../styles/index.scss';
 
 export const App = () => {
   return (
-    <div className='app_container'>
+    <div>
       <Header />
       <Foreword />
       <HowItWorks />
