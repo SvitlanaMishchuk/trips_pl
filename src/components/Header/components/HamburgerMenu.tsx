@@ -19,19 +19,21 @@ export const HamburgerMenu = () => {
       <IconButton icon={faBars} onClick={handleHamburgerMenuClick} />
       {/*   Mobile navigation */}
       {isMenuOpen && (
-        <div className='hamburger-menu_container'>
+        <div className='w-2/5 min-w-62 h-full fixed top-0 left-0 bg-secondary lg:hidden'>
           <div className='flex'>
             <IconButton
-              className='hamburger-menu_close'
+              className='pr-2 pl-8'
               icon={faXmark}
               onClick={handleHamburgerMenuClick}
             />
-            <Logo className='hamburger-menu_logo' />
+            <Logo className='-mt-[3px] -ml-[2px]' />
           </div>
           <div>
             <Navigation
-              containerClassName={'direction-column'}
-              navigationItemClassName={'hamburger-menu_item'}
+              containerClassName={'flex-col'}
+              navigationItemClassName={
+                'my-2 mx-5 py-4 px-1 leading-5 border-b border-dark-secondary'
+              }
             />
           </div>
         </div>

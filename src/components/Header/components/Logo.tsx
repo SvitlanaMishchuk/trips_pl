@@ -4,7 +4,7 @@ export const Logo = ({ className }: ComponentProps<'img'>) => {
   return (
     <img
       src='./../../../assets/logo.png'
-      className={`logo ${className}`}
+      className={`${className}`}
       alt='Trips Plan'
     />
   );

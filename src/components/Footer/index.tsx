@@ -1,4 +1,3 @@
-import './styles.scss';
 const footerTabs: Array<string> = [
   'About',
   'FAQ',
@@ -9,9 +8,15 @@ const footerTabs: Array<string> = [
 
 export const Footer = () => {
   return (
-    <footer className={'flex justify-end footer_container'}>
+    <footer
+      className={
+        'flex justify-center lg:justify-end flex-wrap py-5 px-8 bg-charcoal text-white font-medium'
+      }
+    >
       {footerTabs.map((tab) => (
-        <div className={'footer_tab'}>{tab}</div>
+        <div className={'mx-5 my-1 lg:my-0'} key={tab}>
+          {tab}
+        </div>
       ))}
     </footer>
   );

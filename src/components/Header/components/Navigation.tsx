@@ -9,14 +9,14 @@ interface NavigationProps {
 
 export const Navigation = ({
   containerClassName,
-  navigationItemClassName,
+  navigationItemClassName = '',
 }: NavigationProps) => {
   const [navigationMenu, setNavigationMenu] =
     useState<NavigationEntity[]>(navigation);
 
   const navigationList = navigationMenu.map(
     ({ id, label }: NavigationEntity) => (
-      <li className={`navigation_link ${navigationItemClassName}`} key={id}>
+      <li className={`px-8 font-light ${navigationItemClassName}`} key={id}>
         {label}
       </li>
     )
