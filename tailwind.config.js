@@ -20,6 +20,8 @@ module.exports = {
       text: '#3c3c3c',
       textSecondary: '#272728',
 
+      shadow: '#282827',
+
       white: '#ffffff',
       charcoal: '#2e4053',
     },
