@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Header } from '../Header';
-import { Countries } from '../Countries';
-import { Home } from '../Home';
+import { Header } from './pages/Home/components/Header';
+import { Countries } from './pages/Countries';
+import { Home } from './pages/Home';
 
-import './../../styles/index.scss';
+import './styles/index.scss';
 
 export const App = () => {
   return (

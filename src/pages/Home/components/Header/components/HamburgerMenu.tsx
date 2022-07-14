@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { IconButton } from '../../../shared/components/IconButton';
+import { IconButton } from '../../../../../shared/components/IconButton';
 import { Logo } from './Logo';
 import { Navigation } from './Navigation';
 

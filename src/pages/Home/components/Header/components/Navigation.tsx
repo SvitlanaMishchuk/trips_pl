@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavigationEntity } from '../../../models/NavigationEntity';
-import navigation from './../../../api/navigation.json';
+import { NavigationEntity } from '../../../../../models/NavigationEntity';
+import navigation from '../../../../../api/navigation.json';
 
 interface NavigationProps {
   containerClassName?: string;
