@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { NavigationEntity } from '../../../models/NavigationEntity';
 import navigation from './../../../api/navigation.json';
 
@@ -15,10 +16,13 @@ export const Navigation = ({
     useState<NavigationEntity[]>(navigation);
 
   const navigationList = navigationMenu.map(
-    ({ id, label }: NavigationEntity) => (
-      <li className={`px-8 font-light ${navigationItemClassName}`} key={id}>
+    ({ id, label, link }: NavigationEntity) => (
+      <NavLink
+        to={link}
+        className={`px-8 font-light ${navigationItemClassName}`}
+      >
         {label}
-      </li>
+      </NavLink>
     )
   );
   return <ul className={`flex ${containerClassName}`}>{navigationList}</ul>;

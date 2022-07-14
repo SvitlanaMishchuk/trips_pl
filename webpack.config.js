@@ -8,7 +8,11 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  devServer: { contentBase: path.join(__dirname, 'src'), port: 9000 },
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
+    port: 9000,
+    historyApiFallback: true,
+  },
   watch: true,
   module: {
     rules: [

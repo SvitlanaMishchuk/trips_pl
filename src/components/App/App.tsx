@@ -1,19 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import { Header } from '../Header';
-import { Foreword } from '../Foreword';
-import { HowItWorks } from '../HowItWorks';
-import { Geography } from '../Geography';
-import { Footer } from '../Footer';
+import { Countries } from '../Countries';
+import { Home } from '../Home';
 
 import './../../styles/index.scss';
 
 export const App = () => {
   return (
     <div>
-      <Header />
-      <Foreword />
-      <HowItWorks />
-      <Geography />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <div className='pt-16'>
+          <Routes>
+            <Route path='/countries' element={<Countries />} />
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
   );
 };

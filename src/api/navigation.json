@@ -1,14 +1,17 @@
 [
   {
     "id": 1,
-    "label": "Flights"
+    "label": "Flights",
+    "link": ""
   },
   {
     "id": 2,
-    "label": "Countries"
+    "label": "Countries",
+    "link": "/countries"
   },
   {
     "id": 3,
-    "label": "Contacts"
+    "label": "Contacts",
+    "link": ""
   }
 ]
