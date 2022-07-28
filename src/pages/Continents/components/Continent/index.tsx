@@ -11,7 +11,7 @@ export const Continent = ({ continent }: ContinentProps) => {
     <>
       <div className='px-4 py-7 my-10  bg-dark-secondary flex'>
         <p className='text-2xl px-10 font-souv'>{continent.name}</p>
-        <Button label='View Region'></Button>
+        <Button label='View Region' type='primary'></Button>
       </div>
       <ul className='grid gap-8 grid-cols-3'>
         {continent.subregions.map(({ id, name }: SubregionEntity) => (
