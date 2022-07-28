@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Header } from './pages/Home/components/Header';
 import { Countries } from './pages/Countries';
-import { Regions } from './pages/Regions';
+import { Continents } from './pages/Continents';
 import { Home } from './pages/Home';
 
 import './styles/index.scss';
@@ -14,7 +14,7 @@ export const App = () => {
         <Header />
         <div className='pt-16'>
           <Routes>
-            <Route path='/regions' element={<Regions />} />
+            <Route path='/continents' element={<Continents />} />
             <Route path='/countries' element={<Countries />} />
             <Route path='/' element={<Home />} />
           </Routes>
