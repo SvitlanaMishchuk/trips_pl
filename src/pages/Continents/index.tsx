@@ -1,8 +1,8 @@
-import { Region } from './components/Region';
-import regions from './../../api/regions.json';
-import { RegionEntity } from '../../models/RegionEntity';
+import { Continent } from './components/Continent';
+import continents from './../../api/continents.json';
+import { ContinentEntity } from '../../models/ContinentEntity';
 
-export const Regions = () => {
+export const Continents = () => {
   return (
     <>
       <div className='bg-dark-secondary font-souv px-8 pt-14 pb-5'>
@@ -16,8 +16,8 @@ export const Regions = () => {
         </div>
       </div>
       <div className='bg-cultured px-10 lg:px-28 py-5'>
-        {regions.map((region: RegionEntity) => (
-          <Region region={region} />
+        {continents.map((continent: ContinentEntity) => (
+          <Continent continent={continent} />
         ))}
       </div>
     </>
