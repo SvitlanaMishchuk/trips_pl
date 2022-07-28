@@ -1,0 +1,71 @@
+[
+  {
+    "id": "Europe",
+    "name": "Europe",
+    "region": "Europe",
+    "subregions": [
+      { "id": "Northern Europe", "name": "Northern Europe" },
+      { "id": "Eastern Europe", "name": "Eastern Europe" },
+      { "id": "Western Europe", "name": "Western Europe" },
+      { "id": "Central Europe", "name": "Central Europe" },
+      { "id": "Southern Europe", "name": "Southern Europe" },
+      { "id": "Southeast Europe", "name": "Southeast Europe" }
+    ]
+  },
+  {
+    "id": "Asia",
+    "name": "Asia",
+    "region": "Asia",
+    "subregions": [
+      { "id": "Eastern Asia", "name": "Eastern Asia" },
+      { "id": "Western Asia", "name": "Western Asia" },
+      { "id": "Central Asia", "name": "Central Asia" },
+      { "id": "Southern Asia", "name": "Southern Asia" },
+      { "id": "South-Eastern Asia", "name": "South-Eastern Asia" }
+    ]
+  },
+  {
+    "id": "North America",
+    "name": "North America",
+    "region": "Americas",
+    "subregions": [
+      { "id": "North America", "name": "North America" },
+      { "id": "Caribbean", "name": "Caribbean" }
+    ]
+  },
+  {
+    "id": "South America",
+    "name": "America",
+    "region": "Americas",
+    "subregions": [
+      { "id": "Central America", "name": "Central America" },
+      { "id": "South America", "name": "South America" }
+    ]
+  },
+  {
+    "id": "Africa",
+    "name": "Africa",
+    "region": "Africa",
+    "subregions": [
+      { "id": "Northern Africa", "name": "Northern Africa" },
+      { "id": "Eastern Africa", "name": "Eastern Africa" },
+      { "id": "Western Africa", "name": "Western Africa" },
+      { "id": "Middle Africa", "name": "Middle Africa" },
+      { "id": "Southern Africa", "name": "Southern Africa" }
+    ]
+  },
+  {
+    "id": "Oceania",
+    "name": "Oceania",
+    "region": "Oceania",
+    "subregions": [
+      {
+        "id": "Australia and New Zealand",
+        "name": "Australia and New Zealand"
+      },
+      { "id": "Micronesia", "name": "Micronesia" },
+      { "id": "Melanesia", "name": "Melanesia" },
+      { "id": "Polynesia", "name": "Polynesia" }
+    ]
+  }
+]
